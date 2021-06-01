@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One';
+    background-color: #d1d1d1;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a, li {
+    text-decoration: none;
+    color: inherit;
+    transition: all ease 1s
+}
+a:hover {
+    color: #f00f;
+    text-shadow: 5px 5px 5px #000;
+    transition: all ease 1s;
+}
+header {
+    grid-area: header;
+    background-color: #fff;
+    width: 100vw;
+    text-align: center;
+    z-index: 1;
+}
+main {
+    grid-area: main;
+    margin: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 95vw;
+}
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 3vw;
+}
+nav>ul>li {
+    float: left;
+    margin: 15px;
+    list-style: none;
+}
+h4 {
+    text-decoration: underline;
+}
+.img>img {
+    height: 300px;
+    border-radius: 60px;
+    margin: 40px 0;
+}
+.resume {
+    padding: 5px 130px;
+}
+.experience {
+    padding-top: 40px;
+}
+.pages {
+    margin: 40px 0;
+}
+.pages>a{
+    font-size: 30px;
+}
+.studies {
+    padding-top: 40px;
+}
+.contact {
+    padding-top: 40px;
+}
+.contact>form>input, .contact>form>textarea {
+    width: 30vw;
+}
+form {
+    position: relative;
+    left: -7vw;
+    text-align: left;
+    margin-top: 30px;
+}
+.infoArea {
+    height: 100%;
+    z-index: 11
+}
+.infoArea:hover aside {
+    margin: 0 0 0 0;
+    transition: all ease 2s;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+.infoArea:hover .btn-info {
+    right: -10vw;
+    transition: all ease 2s;
+}
+.btn-info {
+    position: fixed;
+    right: 3vw;
+    bottom: 38vh;
+    transition: all ease 2s;
+}
+aside {
+    border-radius: 15px;
+    grid-area: aside;
+    text-align: center;
+    margin: 0 -30vw 0 0;
+    right: 0;
+    bottom: 0;
+    height: 97%;
+    position: fixed;
+    padding: 20px 20px 0 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all ease 2s;
+}
+aside>h5, aside>div>h6 {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #f00f;
+}
+aside>.qr>img {
+    width: 5vw;
+}
+.tecnology>img {
+    height: 20px;
+}
+.qr {
+    margin: 3vh auto;
+}
+footer {
+    grid-area: footer;
+    margin: 30px auto;
+}
+footer>.socials>a>img {
+    width: 3vw;
+    padding-left: 20px;
+}
+body {
+    display: grid;
+    grid-template-columns: 75vw 22vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer"
+}
+.contact {
+    width: 150px;
+    margin: 30px auto;
+}
